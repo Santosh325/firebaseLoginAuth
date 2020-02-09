@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:weightSum="5"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homeActivity">
+
+    <LinearLayout
+
+        android:weightSum="2"
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Travel"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="About us"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Land a Trip"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/logout"
+            android:background="@drawable/logoutbutton"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"
+            android:text="Log Out"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/mountain"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <LinearLayout
+        android:gravity="center"
+        android:weightSum="3"
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/image1"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:src="@drawable/boat"
+                />
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/image2"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/one"
+
+           />
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/image3"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/france"
+            />
+    </LinearLayout>
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/hill"
+        android:layout_weight="1.31"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+</LinearLayout>
